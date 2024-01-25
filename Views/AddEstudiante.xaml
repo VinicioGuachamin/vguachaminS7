@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="vguachaminS7.Views.AddEstudiante"
+             Title="AddEstudiante">
+    <VerticalStackLayout Padding="30">
+        <Label 
+            Text="Agregar Estudiante"
+            FontSize="24" 
+            HorizontalTextAlignment="Center"
+            TextColor="Gray"/>
+
+        <Entry x:Name="txtNombre"
+               Placeholder="Nombre..."
+            />
+        <Entry x:Name="txtApellido"
+           Placeholder="Ingrese Apellido"
+        />
+        <Entry x:Name="txtEdad"
+           Placeholder="Edad..."
+        />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="espacio" Text="" Grid.Row="0" Grid.Column="0"/>
+        </Grid>
+
+        <Button x:Name="btnAgregar"
+                Text="Guardar"
+                Clicked="btnAgregar_Clicked"
+                BackgroundColor="SkyBlue"
+            />
+    </VerticalStackLayout>
+</ContentPage>

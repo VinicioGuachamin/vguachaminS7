@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="vguachaminS7.Views.UpdateDeleteEstudiante"
+             Title="UpdateDeleteEstudiante">
+    <VerticalStackLayout Padding="30">
+        <Label 
+            Text="ACTUALIZAR - ELIMINAR"
+            FontSize="24" 
+            HorizontalTextAlignment="Center" 
+            TextColor="Gray"/>
+
+        <Entry x:Name="txtCodigo"
+            IsReadOnly="True"
+         />
+        <Entry x:Name="txtNombre"
+           Placeholder="Ingrese Nombre"
+        />
+        <Entry x:Name="txtApellido"
+           Placeholder="Ingrese Apellido"
+        />
+        <Entry x:Name="txtEdad"
+           Placeholder="Ingrese Edad"
+        />
+
+        <Button x:Name="btnActualizar"
+                Text="Actualiar"
+                Clicked="btnActualizar_Clicked"
+                BackgroundColor="Green"
+        />
+        <Button x:Name="btnEliminar"
+                Text="Eliminar"
+                Clicked="btnEliminar_Clicked"
+                BackgroundColor="OrangeRed"
+        />
+
+
+    </VerticalStackLayout>
+</ContentPage>
